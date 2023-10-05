@@ -4,9 +4,53 @@
     <!--<img src="img/logo.png" alt="logo">-->
 
 <main class="ontainer">
-<div class="jumbotron">
+    <div class="jumbotron">
 
-    <h1>Welcome to <%= title %> Page</h1>
+        <h1>My <%= title %> Information Page</h1>
+        <br>
+        <p>You can contact me directly.</p>
+        <p>My details are as follows:</p>
+        <div class="card" style="width: 20rem; height: 22rem; background-color: cadetblue;" >
+            <h2 class="card-title">Contact Information</h2>
+            <div class="card" style="width: 18rem;">
+                <h3 class="card-subtitle mb-2">Full Name</h3>
+                <div class="card-body"> Dylan Tibor Meszaros </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <h3 class="card-subtitle mb-2">Email</h3>
+                <div class="card-body"> dylan.meszaros123@outlook.com </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <h3 class="card-subtitle mb-2">Phone Number</h3>
+                <div class="card-body"> 519-333-4444 </div>
+            </div>
+        </div>
+
+        <br>
+
+        <p>Or you can place a ticket for me to reply to you using this form:</p>
+
+        <div class="card" style="width: 20rem; height: 22rem; background-color: rgb(150, 207, 209);" >
+            <h2 class="card-title">Contact Form</h2>
+            <br>
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="pnum">Phone number:</label><br>
+                <input type="text" id="pnum" name="pnum"><br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            
+        </div>
+        <br>
+        <br>
+        <br>
+
     </div>
 </main>
 
