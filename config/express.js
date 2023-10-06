@@ -2,7 +2,8 @@ var express = require('express'),
     morgan = require('morgan'),
     compress = require('compression'),
     bodyParser = require('body-parser'),
-    methodOverride = require('method-override');
+    methodOverride = require('method-override');//,
+    //path = require('path');
 
 module.exports = function () {
 
@@ -30,8 +31,12 @@ module.exports = function () {
     app.set('view engine', 'ejs');
     app.use('/', require('../app/routes/index.server.routes.js'));
     //require('../app/routes/index.server.routes.js')(app);
+    //app.use(express.static(path.join(__dirname, 'public')));
     app.use(express.static('./public'));
     app.use(express.static("./node_modules"));
+
+    app.use(express.static("./@fortawesome/fontawesome-free/css/all.min.css"));
+    app.use(express.static("./public/Content/style.css"));
     
     return app;
 };
